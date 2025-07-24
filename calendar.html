@@ -1,446 +1,877 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025 Calendar</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.5; /* Improved readability */
-        }
-        .month-container {
-            margin-bottom: 40px; /* Space between months */
-            padding: 15px; /* Add padding around each month section */
-            border: 1px solid #eee; /* Light border around month container */
-            border-radius: 8px; /* Rounded corners */
-            background-color: #fdfdfd; /* Slightly off-white background */
-        }
-        table {
-            width: 100%;
-            max-width: 700px; /* Adjusted max width */
-            margin-left: auto; /* Center the table */
-            margin-right: auto; /* Center the table */
-            border-collapse: collapse;
-            border: 1px solid #ccc;
-        }
-        caption {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            font-weight: bold;
-            color: #333;
-            text-align: center; /* Ensure caption is centered */
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-            height: 60px; /* Consistent height */
-            vertical-align: top;
-            font-size: 0.9em;
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
-        }
-        th {
-            background-color: #e9e9e9;
-            font-weight: bold;
-            color: #555;
-        }
-        td {
-            background-color: #FFFFE0;
-        }
-        td.empty {
-            background-color: #f9f9f9;
-        
-        /* Add a title above the calendars */
-        h1 {
-            text-align: center;
-            color: #444;
-            margin-bottom: 30px;
-        }
-    </style>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2025 Calendar</title>
+
+    <style>
+
+        body {
+
+            font-family: sans-serif;
+
+            line-height: 1.5; /* Improved readability */
+
+        }
+
+        .month-container {
+
+            margin-bottom: 40px; /* Space between months */
+
+            padding: 15px; /* Add padding around each month section */
+
+            border: 1px solid #eee; /* Light border around month container */
+
+            border-radius: 8px; /* Rounded corners */
+
+            background-color: #fdfdfd; /* Slightly off-white background */
+
+        }
+
+        table {
+
+            width: 100%;
+
+            max-width: 700px; /* Adjusted max width */
+
+            margin-left: auto; /* Center the table */
+
+            margin-right: auto; /* Center the table */
+
+            border-collapse: collapse;
+
+            border: 1px solid #ccc;
+
+        }
+
+        caption {
+
+            font-size: 1.8em;
+
+            margin-bottom: 15px;
+
+            font-weight: bold;
+
+            color: #333;
+
+            text-align: center; /* Ensure caption is centered */
+
+        }
+
+        th, td {
+
+            border: 1px solid #ddd;
+
+            padding: 10px;
+
+            text-align: center;
+
+            height: 60px; /* Consistent height */
+
+            vertical-align: top;
+
+            font-size: 0.9em;
+
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+
+        }
+
+        th {
+
+            background-color: #e9e9e9;
+
+            font-weight: bold;
+
+            color: #555;
+
+        }
+
+        td {
+
+            background-color: #FFFFE0;
+
+        }
+
+        td.empty {
+
+            background-color: #f9f9f9;
+
+        
+
+        /* Add a title above the calendars */
+
+        h1 {
+
+            text-align: center;
+
+            color: #444;
+
+            margin-bottom: 30px;
+
+        }
+
+    </style>
+
 </head>
+
 <body>
 
-<h1><center><a  href="index.html"><img src="assets/banner.png" width="70%"></a></center></h1>
-<!--JAN START-->
-<div class="month-container">
-    <table>
-        <caption>January 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td>
-                <td>1 </td><td>2</td><td>3</td><td>4</td>
-            </tr>
-            <tr>
-                <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
-            </tr>
-            <tr>
-                <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
-            </tr>
-            <tr>
-                <td>19</td><td>20 </td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
-            </tr>
-            <tr>
-                <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<!--FEB START-->
-<div class="month-container">
-    <table>
-        <caption>February 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-            </tr>
-            <tr>
-                <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
-            </tr>
-            <tr>
-                <td>16</td><td>17 </td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
-            </tr>
-            <tr>
-                <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td class="empty"></td>
-            </tr>
-            <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<!--MAR START-->
-<div class="month-container">
-    <table>
-        <caption>March 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-            </tr>
-            <tr>
-                <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
-            </tr>
-            <tr>
-                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
-            </tr>
-            <tr>
-                <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
-            </tr>
-             <tr>
-                <td>30</td><td>31</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+
+<h1><a  href="index.html"><img src="assets/banner.png" width="70%"></a></h1>
+
 
 <div class="month-container">
-    <table>
-        <caption>April 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="empty"></td><td class="empty"></td>
-                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
-            </tr>
-            <tr>
-                <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
-            </tr>
-            <tr>
-                <td>13</td><td>14</td><td>15</td><td>16</td><td>17<p>Blind Tasting</p></td><td>18</td><td>19</td>
-            </tr>
-            <tr>
-                <td>20</td><td>21</td><td>22 </td><td>23</td><td>24<p>Blind Tasting</p></td><td>25</td><td>26</td>
-            </tr>
-            <tr>
-                <td>27</td><td>28</td><td>29</td><td>30</td>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
+
+    <table>
+
+        <caption>January 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+                <td class="holiday">1 </td><td>2</td><td>3</td><td>4</td>
+
+            </tr>
+
+            <tr>
+
+                <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+
+            </tr>
+
+            <tr>
+
+                <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+
+            </tr>
+
+            <tr>
+
+                <td>19</td><td class="holiday">20 </td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+
+            </tr>
+
+            <tr>
+
+                <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
 </div>
 
-<div class="month-container">
-    <table>
-        <caption>May 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-                <td>1</td><td>2</td><td>3</td>
-            </tr>
-            <tr>
-                <td>4</td><td>5</td><td>6</td><td>7</td><td>8<p>Blind Tasting</p></td><td>9</td><td>10</td>
-            </tr>
-            <tr>
-                <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
-            </tr>
-            <tr>
-                <td>18</td><td>19</td><td>20<p>Blind Tasting</p></td><td>21</td><td>22</td><td>23</td><td>24</td>
-            </tr>
-            <tr>
-                <td>25<p>Book Club</p></td><td>26 </td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
-            </tr>
-             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
 
 <div class="month-container">
-    <table>
-        <caption>June 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
-            </tr>
-            <tr>
-                <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
-            </tr>
-            <tr>
-                <td>15</td><td>16</td><td>17</td><td>18</td><td>19 </td><td>20</td><td>21</td>
-            </tr>
-            <tr>
-                <td>22<p>Book Club</p></td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
-            </tr>
-            <tr>
-                <td>29</td><td>30</td>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-            <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
+
+    <table>
+
+        <caption>February 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+                <td>1</td>
+
+            </tr>
+
+            <tr>
+
+                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+
+            </tr>
+
+            <tr>
+
+                <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+
+            </tr>
+
+            <tr>
+
+                <td>16</td><td class="holiday">17 </td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+
+            </tr>
+
+            <tr>
+
+                <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td class="empty"></td>
+
+            </tr>
+
+            <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
 </div>
 
-<div class="month-container">
-    <table>
-        <caption>July 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                 <td class="empty"></td><td class="empty"></td>
-                 <td>1</td><td>2</td><td>3</td><td>4 </td><td>5</td>
-            </tr>
-            <tr>
-                <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
-            </tr>
-            <tr>
-                <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
-            </tr>
-            <tr>
-                <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
-            </tr>
-            <tr>
-                <td>27<p>Book Club</p></td><td>28</td><td>29</td><td>30</td><td>31</td>
-                <td class="empty"></td><td class="empty"></td>
-            </tr>
-             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
 
 <div class="month-container">
-    <table>
-        <caption>August 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-                <td>1</td><td>2</td>
-            </tr>
-            <tr>
-                <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
-            </tr>
-            <tr>
-                <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
-            </tr>
-            <tr>
-                <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
-            </tr>
-            <tr>
-                <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
-            </tr>
-             <tr>
-                <td>31</td>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
+
+    <table>
+
+        <caption>March 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+                <td>1</td>
+
+            </tr>
+
+            <tr>
+
+                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+
+            </tr>
+
+            <tr>
+
+                <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+
+            </tr>
+
+            <tr>
+
+                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+
+            </tr>
+
+            <tr>
+
+                <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+
+            </tr>
+
+             <tr>
+
+                <td>30</td><td>31</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
 </div>
 
-<div class="month-container">
-    <table>
-        <caption>September 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="empty"></td>
-                <td>1 </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
-            </tr>
-            <tr>
-                <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
-            </tr>
-            <tr>
-                <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
-            </tr>
-            <tr>
-                <td>21<p>Book Club</p></td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
-            </tr>
-            <tr>
-                <td>28</td><td>29</td><td>30</td>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
 
 <div class="month-container">
-    <table>
-        <caption>October 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                 <td class="empty"></td><td class="empty"></td><td class="empty"></td>
-                 <td>1</td><td>2</td><td>3</td><td>4</td>
-            </tr>
-            <tr>
-                <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
-            </tr>
-            <tr>
-                <td>12</td><td>13 </td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
-            </tr>
-            <tr>
-                <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
-            </tr>
-            <tr>
-                <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
-                 <td class="empty"></td>
-            </tr>
-             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
+
+    <table>
+
+        <caption>April 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td class="empty"></td><td class="empty"></td>
+
+                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+
+            </tr>
+
+            <tr>
+
+                <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+
+            </tr>
+
+            <tr>
+
+                <td>13</td><td>14</td><td>15</td><td>16</td><td>17<p>Blind Tasting</p></td><td>18</td><td>19</td>
+
+            </tr>
+
+            <tr>
+
+                <td>20</td><td>21</td><td>22 </td><td>23</td><td>24<p>Blind Tasting</p></td><td>25</td><td>26</td>
+
+            </tr>
+
+            <tr>
+
+                <td>27</td><td>28</td><td>29</td><td>30</td>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
 </div>
 
-<div class="month-container">
-    <table>
-        <caption>November 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-            </tr>
-            <tr>
-                <td>9</td><td>10</td><td>11 </td><td>12</td><td>13</td><td>14</td><td>15</td>
-            </tr>
-            <tr>
-                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
-            </tr>
-            <tr>
-                <td>23</td><td>24</td><td>25</td><td>26</td><td>27 </td><td>28</td><td>29</td>
-            </tr>
-             <tr>
-                <td>30</td>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
 
 <div class="month-container">
-    <table>
-        <caption>December 2025</caption>
-        <thead>
-            <tr>
-                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="empty"></td>
-                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
-            </tr>
-            <tr>
-                <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
-            </tr>
-            <tr>
-                <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
-            </tr>
-            <tr>
-                <td>21</td><td>22</td><td>23</td><td>24</td><td>25 </td><td>26</td><td>27</td>
-            </tr>
-            <tr>
-                <td>28</td><td>29</td><td>30</td><td>31</td>
-                <td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-            </tr>
-        </tbody>
-    </table>
+
+    <table>
+
+        <caption>May 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+                <td>1</td><td>2</td><td>3</td>
+
+            </tr>
+
+            <tr>
+
+                <td>4</td><td>5</td><td>6</td><td>7</td><td>8<p>Blind Tasting</p></td><td>9</td><td>10</td>
+
+            </tr>
+
+            <tr>
+
+                <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+
+            </tr>
+
+            <tr>
+
+                <td>18</td><td>19</td><td>20<p>Blind Tasting</p></td><td>21</td><td>22</td><td>23</td><td>24</td>
+
+            </tr>
+
+            <tr>
+
+                <td>25<p>Book Club</p></td><td class="holiday">26 </td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+
+            </tr>
+
+             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
 </div>
+
+
+<div class="month-container">
+
+    <table>
+
+        <caption>June 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+
+            </tr>
+
+            <tr>
+
+                <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+
+            </tr>
+
+            <tr>
+
+                <td>15</td><td>16</td><td>17</td><td>18</td><td class="holiday">19 </td><td>20</td><td>21</td>
+
+            </tr>
+
+            <tr>
+
+                <td>22<p>Book Club</p></td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+
+            </tr>
+
+            <tr>
+
+                <td>29</td><td>30</td>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+            <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<div class="month-container">
+
+    <table>
+
+        <caption>July 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                 <td class="empty"></td><td class="empty"></td>
+
+                 <td>1</td><td>2</td><td>3</td><td class="holiday">4 </td><td>5</td>
+
+            </tr>
+
+            <tr>
+
+                <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+
+            </tr>
+
+            <tr>
+
+                <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+
+            </tr>
+
+            <tr>
+
+                <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+
+            </tr>
+
+            <tr>
+
+                <td>27<p>Book Club</p></td><td>28</td><td>29</td><td>30</td><td>31</td>
+
+                <td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<div class="month-container">
+
+    <table>
+
+        <caption>August 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+                <td>1</td><td>2</td>
+
+            </tr>
+
+            <tr>
+
+                <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+
+            </tr>
+
+            <tr>
+
+                <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+
+            </tr>
+
+            <tr>
+
+                <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+
+            </tr>
+
+            <tr>
+
+                <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+
+            </tr>
+
+             <tr>
+
+                <td>31</td>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<div class="month-container">
+
+    <table>
+
+        <caption>September 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td class="empty"></td>
+
+                <td class="holiday">1 </td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+
+            </tr>
+
+            <tr>
+
+                <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+
+            </tr>
+
+            <tr>
+
+                <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+
+            </tr>
+
+            <tr>
+
+                <td>21<p>Book Club</p></td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+
+            </tr>
+
+            <tr>
+
+                <td>28</td><td>29</td><td>30</td>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<div class="month-container">
+
+    <table>
+
+        <caption>October 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                 <td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+                 <td>1</td><td>2</td><td>3</td><td>4</td>
+
+            </tr>
+
+            <tr>
+
+                <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+
+            </tr>
+
+            <tr>
+
+                <td>12</td><td class="holiday">13 </td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+
+            </tr>
+
+            <tr>
+
+                <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+
+            </tr>
+
+            <tr>
+
+                <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+
+                 <td class="empty"></td>
+
+            </tr>
+
+             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<div class="month-container">
+
+    <table>
+
+        <caption>November 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+                <td>1</td>
+
+            </tr>
+
+            <tr>
+
+                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+
+            </tr>
+
+            <tr>
+
+                <td>9</td><td>10</td><td class="holiday">11 </td><td>12</td><td>13</td><td>14</td><td>15</td>
+
+            </tr>
+
+            <tr>
+
+                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+
+            </tr>
+
+            <tr>
+
+                <td>23</td><td>24</td><td>25</td><td>26</td><td class="holiday">27 </td><td>28</td><td>29</td>
+
+            </tr>
+
+             <tr>
+
+                <td>30</td>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<div class="month-container">
+
+    <table>
+
+        <caption>December 2025</caption>
+
+        <thead>
+
+            <tr>
+
+                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td class="empty"></td>
+
+                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+
+            </tr>
+
+            <tr>
+
+                <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+
+            </tr>
+
+            <tr>
+
+                <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+
+            </tr>
+
+            <tr>
+
+                <td>21</td><td>22</td><td>23</td><td>24</td><td class="holiday">25 </td><td>26</td><td>27</td>
+
+            </tr>
+
+            <tr>
+
+                <td>28</td><td>29</td><td>30</td><td>31</td>
+
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
 
 </body>
-</html>
+
+</html> 
