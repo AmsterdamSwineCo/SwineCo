@@ -116,6 +116,52 @@
 
         }
 
+            .event {
+    position: relative; /* Establishes a positioning context for the tooltip */
+    display: inline-block;
+    cursor: pointer; /* Shows a pointer to indicate it's interactive */
+    background-color: #FFFACD; /* A light yellow to highlight the event */
+    border-radius: 4px;
+    padding: 3px 5px;
+    margin-top: 4px; /* Space between date number and event */
+    font-size: 0.9em; /* Slightly smaller font for the event title */
+}
+
+.event .tooltip-text {
+    visibility: hidden; /* Hidden by default */
+    width: 220px; /* Width of the tooltip window */
+    background-color: #333; /* Dark background for the tooltip */
+    color: #fff; /* White text */
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1; /* Ensures tooltip is on top */
+    bottom: 125%; /* Position above the event text */
+    left: 50%;
+    margin-left: -110px; /* Center the tooltip (half of its width) */
+    opacity: 0; /* Start fully transparent */
+    transition: opacity 0.3s; /* Smooth fade-in animation */
+}
+
+/* Creates the small arrow below the tooltip */
+.event .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Makes the tooltip visible on hover */
+.event:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
     </style>
 
 </head>
@@ -308,67 +354,51 @@
 
 
 <div class="month-container">
-
     <table>
-
         <caption>April 2025</caption>
-
         <thead>
-
             <tr>
-
                 <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-
             </tr>
-
         </thead>
-
         <tbody>
-
             <tr>
-
                 <td class="empty"></td><td class="empty"></td>
-
                 <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
-
             </tr>
-
             <tr>
-
                 <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
-
             </tr>
-
             <tr>
-
-                <td>13</td><td>14</td><td>15</td><td>16</td><td>17<p>Blind Tasting</p></td><td>18</td><td>19</td>
-
+                <td>13</td><td>14</td><td>15</td><td>16</td>
+                <td>17
+                    <div class="event">
+                        Blind Tasting
+                        <span class="tooltip-text">Test your palate with six mystery wines! A fun, educational night. <br><strong>Price: $50</strong></span>
+                    </div>
+                </td>
+                <td>18</td><td>19</td>
             </tr>
-
             <tr>
-
-                <td>20</td><td>21</td><td>22 </td><td>23</td><td>24<p>Blind Tasting</p></td><td>25</td><td>26</td>
-
+                <td>20</td><td>21</td><td>22</td><td>23</td>
+                <td>24
+                    <div class="event">
+                        Blind Tasting
+                        <span class="tooltip-text">Test your palate with six mystery wines! A fun, educational night. <br><strong>Price: $50</strong></span>
+                    </div>
+                </td>
+                <td>25</td><td>26</td>
             </tr>
-
             <tr>
-
                 <td>27</td><td>28</td><td>29</td><td>30</td>
-
                 <td class="empty"></td><td class="empty"></td><td class="empty"></td>
-
             </tr>
-
-             <tr> <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
-
+            <tr>
+                <td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
             </tr>
-
         </tbody>
-
     </table>
-
 </div>
-
 
 <div class="month-container">
 
