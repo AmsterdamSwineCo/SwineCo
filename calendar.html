@@ -94,6 +94,14 @@
             transition: opacity 0.3s;
         }
 
+        .event .tooltip-text img {
+            max-width: 100%;
+            height: auto;
+            max-height: 120px;
+            border-radius: 4px;
+            margin-bottom: 6px;
+        }
+
         .event .tooltip-text::after {
             content: "";
             position: absolute;
@@ -570,7 +578,7 @@
                     <td>23</td><td>24</td>
                     <td>25<p><div class="event">Blind Tasting<span class="tooltip-text">Test your palate with six mystery wines! A fun, educational night.<br><strong>Price: $50    Time: 7p</strong></span></div></p></td>
                     <td>26</td><td>27</td>
-                    <td>28<p><div class="event">No Strings Attached: March West Side Knitting Meetup<span class="tooltip-text">An evening of knitting, good conversation, and great wine in a unique setting. Space is casual and drop-in friendly — come solo or with a friend, and stay as long as you’d like. We can't wait to knit with you!<br><strong>Price: $0    Time: 5–9p</strong></span></div></p></tr></tr>
+                    <td>28<p><div class="event">No Strings Attached: March West Side Knitting Meetup<span class="tooltip-text">An evening of knitting, good conversation, and great wine in a unique setting. Space is casual and drop-in friendly — come solo or with a friend, and stay as long as you’d like. We can'wait to knit with you!<br><strong>Price: $0    Time: 5–9p</strong></span></div></p></tr></tr>
                     <tr><td>29<p><div class="event">Book Club Brunch<span class="tooltip-text">Settle in the cellar to discuss Solvej Balle's On the Calculation of Volume: Book 1. Prep favorite passages to share!<br><strong>Price: $0    Time: 12p</strong></span></div></p></td>
                     <td>30<p><div class="event">AFS – SRK Spring Begins!<span class="tooltip-text">Visit the cellar for the first edition of our spring celebration of Shah Rukh Khan. This ~160 min. film is a romantic thriller from the heart of his King of Romance era (1995-98).<br><strong>Price: $0    Time: 6:30p</strong></span></div></p></td>
                     <td>31</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
@@ -714,24 +722,51 @@
                 </thead>
                 <tbody>
                     <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>1</td></tr>
-                    <tr><td>2<p><div class="event">Book Club Brunch<span class="tooltip-text">Settle in the cellar to discuss Villa Coco by Andrew Sean Greer. Prep favorite passages to share!<br><strong>Price: $0    Time: 12p</strong></span></div></p></td>
-                    <td>3</td><td>4</td>
-                    <td>5<p><div class="event">MTG: Cube<span class="tooltip-text">Draft a deck then play three rounds against your neighbors, friends and rivals. <br><strong>Price: $0    Time: 6p</strong></span></div></p></td>
-                    <td>6<p><div class="event">Blind Tasting<span class="tooltip-text">Test your palate with six mystery wines! A fun, educational night.<br><strong>Price: $50    Time: 7p</strong></span></div></p></td>
-                    <td>7</td><td>8</td></tr>
-                    <tr><td>9<td>4<p><div class="event">AFS Criterion Collection<p>Part 1</p><span class="tooltip-text"><img src="assets/afs_8_9_10.jpg"><br><strong>Price: $0    Time: 8:00p</strong></span></div></p></td></tr>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12<p><div class="event">MTG: Cube<span class="tooltip-text">Draft a deck then play three rounds against your neighbors, friends and rivals. <br><strong>Price: $0    Time: 6p</strong></span></div></p></td>
-                    <td>13<p><div class="event">Blind Tasting<span class="tooltip-text">Test your palate with six mystery wines! A fun, educational night.<br><strong>Price: $50    Time: 7p</strong></span></div></p></td>
-                    <td>14</td><td>15</td></tr>
-                    <tr><td>16</td><td>17</td><td>18</td>
-                    <td>19<p><div class="event">MTG: Cube<span class="tooltip-text">Draft a deck then play three rounds against your neighbors, friends and rivals. <br><strong>Price: $0    Time: 6p</strong></span></div></p></td>
-                    <td>20<p><div class="event">Poetry 20<span class="tooltip-text">Share favorite poetry by others or your own works in your native tongue or English, as you please.<br><strong>Price: $0    Time: 19</strong></span></div></p></td>
-                    <td>21</td><td>22</td></tr>
-                    <tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr>
-                    <tr><td>30<p><div class="event">Book Club Brunch<span class="tooltip-text">Settle in the cellar to discuss Mother River by Can Xue. Prep favorite passages to share!<br><strong>Price: $0    Time: 12p</strong></span></div></p></td>
-                    <td>31</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+                    <tr>
+                        <td>2<p><div class="event">Book Club Brunch<span class="tooltip-text">Settle in the cellar to discuss Villa Coco by Andrew Sean Greer. Prep favorite passages to share!<br><strong>Price: $0    Time: 12p</strong></span></div></p></td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5<p><div class="event">MTG: Cube<span class="tooltip-text">Draft a deck then play three rounds against your neighbors, friends and rivals. <br><strong>Price: $0    Time: 6p</strong></span></div></p></td>
+                        <td>6<p><div class="event">Blind Tasting<span class="tooltip-text">Test your palate with six mystery wines! A fun, educational night.<br><strong>Price: $50    Time: 7p</strong></span></div></p></td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9<p><div class="event">AFS Criterion Collection<p>Part 1</p><span class="tooltip-text"><img src="assets/afs_8_9_10.jpg"><br><strong>Price: $0    Time: 8:00p</strong></span></div></p></td>
+                        <td>10<p><div class="event">AFS Criterion Collection<p>Part 2</p><span class="tooltip-text"><img src="assets/afs_8_9_10.jpg"><br><strong>Price: $0    Time: 8:00p</strong></span></div></p></td>
+                        <td>11</td>
+                        <td>12<p><div class="event">MTG: Cube<span class="tooltip-text">Draft a deck then play three rounds against your neighbors, friends and rivals. <br><strong>Price: $0    Time: 6p</strong></span></div></p></td>
+                        <td>13<p><div class="event">Blind Tasting<span class="tooltip-text">Test your palate with six mystery wines! A fun, educational night.<br><strong>Price: $50    Time: 7p</strong></span></div></p></td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19<p><div class="event">MTG: Cube<span class="tooltip-text">Draft a deck then play three rounds against your neighbors, friends and rivals. <br><strong>Price: $0    Time: 6p</strong></span></div></p></td>
+                        <td>20<p><div class="event">Poetry 20<span class="tooltip-text">Share favorite poetry by others or your own works in your native tongue or English, as you please.<br><strong>Price: $0    Time: 19</strong></span></div></p></td>
+                        <td>21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>30<p><div class="event">Book Club Brunch<span class="tooltip-text">Settle in the cellar to discuss Mother River by Can Xue. Prep favorite passages to share!<br><strong>Price: $0    Time: 12p</strong></span></div></p></td>
+                        <td>31</td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
