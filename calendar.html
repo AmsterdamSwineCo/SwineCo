@@ -20,15 +20,15 @@
         }
 
         .month-container {
-            margin-bottom: 40px;
+            width: 95%;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
             background-color: transparent;
         }
 
         table {
             width: 100%;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            table-layout: fixed;
             border-collapse: collapse;
             border: 4px solid #000000;
             background-color: #ffffff;
@@ -55,6 +55,8 @@
             vertical-align: top;
             font-size: 0.95em;
             box-sizing: border-box;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
         }
 
         th {
@@ -87,6 +89,8 @@
             margin-top: 5px;
             font-size: 0.85em;
             font-weight: bold;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
         }
 
         .event .tooltip-text {
@@ -133,6 +137,7 @@
             opacity: 1;
         }
 
+        /* Year Selector Styles */
         .year-selector {
             text-align: center;
             margin: 20px 0 30px 0;
@@ -159,11 +164,28 @@
         }
 
         .calendar-year {
-            display: none;
+            display: none; /* Hidden by default, toggled by JS */
         }
         
         .calendar-year.active-year {
             display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+            caption {
+                font-size: 1.6em;
+                padding: 8px 10px;
+            }
+            th, td {
+                padding: 4px;
+                font-size: 0.8em;
+                height: 60px;
+            }
+            .event {
+                padding: 2px 4px;
+                font-size: 0.75em;
+                line-height: 1.2;
+            }
         }
     </style>
 </head>
