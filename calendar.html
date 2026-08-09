@@ -22,7 +22,6 @@
 
         .month-container {
             margin-bottom: 40px;
-            /* Removed background/padding so the table forms a solid sign block */
             background-color: transparent;
         }
 
@@ -32,27 +31,25 @@
             margin-left: auto;
             margin-right: auto;
             border-collapse: collapse;
-            /* Thick Web 1.0 black border for the sign edge */
             border: 4px solid #000000;
             background-color: #ffffff;
         }
 
         caption {
-            /* Emulates the black top-bar of MTA signs */
             background-color: #000000;
             color: #ffffff;
             font-size: 2.2em;
             font-weight: bold;
             text-align: left;
             padding: 10px 15px;
-            letter-spacing: -1px; /* Tighter kerning characteristic of MTA signs */
+            letter-spacing: -1px;
             border: 4px solid #000000;
             border-bottom: none;
         }
 
         th,
         td {
-            border: 2px solid #000000; /* Heavy black gridlines */
+            border: 2px solid #000000;
             padding: 8px;
             text-align: left;
             height: 80px;
@@ -73,7 +70,7 @@
         td {
             background-color: #ffffff;
             color: #000000;
-            font-weight: bold; /* Bold numbers */
+            font-weight: bold;
         }
 
         td.empty {
@@ -82,9 +79,9 @@
 
         .event {
             position: relative;
-            display: block; /* Blocks instead of inline for web 1.0 feel */
+            display: block;
             cursor: pointer;
-            background-color: #FCCC0A; /* Exact MTA Yellow (N/Q/R/W) */
+            background-color: #FCCC0A;
             color: #000000;
             border: 2px solid #000000;
             padding: 4px;
@@ -137,7 +134,6 @@
             opacity: 1;
         }
 
-        /* Year Selector Styles - Made to look like MTA subway badges */
         .year-selector {
             text-align: center;
             margin: 20px 0 30px 0;
@@ -147,7 +143,7 @@
             background-color: #000000;
             color: #ffffff;
             border: 3px solid #000000;
-            border-radius: 50%; /* Circle badge */
+            border-radius: 50%;
             width: 70px;
             height: 70px;
             font-size: 1.2em;
@@ -159,12 +155,12 @@
         }
 
         .year-btn.active {
-            background-color: #EE352E; /* Exact MTA Red (1/2/3) */
+            background-color: #EE352E;
             color: #ffffff;
         }
 
         .calendar-year {
-            display: none; /* Hidden by default, toggled by JS */
+            display: none;
         }
         
         .calendar-year.active-year {
