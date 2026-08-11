@@ -26,7 +26,7 @@
             background-color: transparent;
         }
 
-        table {
+        .month-container table {
             width: 100%;
             table-layout: fixed;
             border-collapse: collapse;
@@ -34,7 +34,7 @@
             background-color: #ffffff;
         }
 
-        caption {
+        .month-container caption {
             background-color: #000000;
             color: #ffffff;
             font-size: 2.2em;
@@ -46,8 +46,8 @@
             border-bottom: none;
         }
 
-        th,
-        td {
+        .month-container th,
+        .month-container td {
             border: 2px solid #000000;
             padding: 8px;
             text-align: left;
@@ -59,7 +59,7 @@
             word-wrap: break-word;
         }
 
-        th {
+        .month-container th {
             background-color: #000000;
             color: #ffffff;
             font-weight: bold;
@@ -68,13 +68,13 @@
             padding: 5px;
         }
 
-        td {
+        .month-container td {
             background-color: #ffffff;
             color: #000000;
             font-weight: bold;
         }
 
-        td.empty {
+        .month-container td.empty {
             background-color: #ffffff;
         }
 
@@ -172,11 +172,11 @@
         }
 
         @media screen and (max-width: 600px) {
-            caption {
+            .month-container caption {
                 font-size: 1.6em;
                 padding: 8px 10px;
             }
-            th, td {
+            .month-container th, .month-container td {
                 padding: 4px;
                 font-size: 0.8em;
                 height: 60px;
