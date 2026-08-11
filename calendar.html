@@ -21,9 +21,10 @@
 
         .month-container {
             width: 95%;
-            max-width: 700px;
+            max-width: 100%;
             margin: 0 auto 40px auto;
             background-color: transparent;
+            box-sizing: border-box;
         }
 
         .month-container table {
@@ -202,7 +203,7 @@
 <tr>
 
 <td width="70%" valign="top" bgcolor="#FFFFE0">
-<div style="height: 1200px; overflow: auto">
+<div style="height: 1200px; overflow-y: auto; overflow-x: hidden;">
 
     <!-- Year Selection Controls -->
     <div class="year-selector">
