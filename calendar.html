@@ -79,7 +79,6 @@
         }
 
         .event {
-            position: relative;
             display: block;
             cursor: pointer;
             background-color: #FCCC0A;
@@ -93,35 +92,46 @@
             word-wrap: break-word;
         }
 
+        /* Source markup for the tooltip content - never shown in place, JS reads it */
         .event .tooltip-text {
-            visibility: hidden;
-            width: max-content;    
-            max-width: 90vw;    
+            display: none;
+        }
+
+        /* Floating tooltip - appended directly to <body> by JS so it always
+           renders above the calendar table instead of being clipped by the
+           scrolling panel */
+        .floating-tooltip {
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            width: max-content;
+            max-width: 90vw;
             background-color: #000000;
             color: #ffffff;
             text-align: left;
             border: 2px solid #ffffff;
             padding: 10px;
-            position: absolute;
-            z-index: 10;
-            bottom: 125%;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.3s;
             font-weight: normal;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 0.85em;
+            line-height: 1.4;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
         }
 
-        .event .tooltip-text img {
+        .floating-tooltip.visible {
+            display: block;
+        }
+
+        .floating-tooltip img {
             display: block;
             width: auto;
             height: auto;
-            max-width: 400px;           
-            max-height: 50vh;           
+            max-width: 400px;
+            max-height: 50vh;
             margin: 0 auto 6px auto;
         }
 
-        .event .tooltip-text::after {
+        .floating-tooltip::after {
             content: "";
             position: absolute;
             top: 100%;
@@ -132,9 +142,10 @@
             border-color: #ffffff transparent transparent transparent;
         }
 
-        .event:hover .tooltip-text {
-            visibility: visible;
-            opacity: 1;
+        .floating-tooltip.tooltip-flip::after {
+            top: auto;
+            bottom: 100%;
+            border-color: transparent transparent #ffffff transparent;
         }
 
         /* Year Selector Styles */
@@ -943,6 +954,84 @@
             } else {
                 showYear(2025);
             }
+        });
+
+        // Floating event tooltip: rendered as a single element appended to
+        // <body> and positioned with `fixed`, so it always floats above the
+        // calendar table instead of being clipped by the scrolling panel.
+        document.addEventListener('DOMContentLoaded', function() {
+            const tooltip = document.createElement('div');
+            tooltip.className = 'floating-tooltip';
+            document.body.appendChild(tooltip);
+
+            let currentTrigger = null;
+
+            function showTooltip(trigger) {
+                const source = trigger.querySelector('.tooltip-text');
+                if (!source) return;
+
+                tooltip.innerHTML = source.innerHTML;
+                tooltip.classList.remove('tooltip-flip');
+                tooltip.classList.add('visible');
+
+                const rect = trigger.getBoundingClientRect();
+                const tooltipRect = tooltip.getBoundingClientRect();
+                const margin = 10;
+
+                let top = rect.top - tooltipRect.height - 12;
+                let flip = false;
+                if (top < margin) {
+                    top = rect.bottom + 12;
+                    flip = true;
+                }
+
+                let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
+                if (left < margin) left = margin;
+                if (left + tooltipRect.width > window.innerWidth - margin) {
+                    left = window.innerWidth - margin - tooltipRect.width;
+                }
+
+                tooltip.style.top = top + 'px';
+                tooltip.style.left = left + 'px';
+                if (flip) tooltip.classList.add('tooltip-flip');
+
+                currentTrigger = trigger;
+            }
+
+            function hideTooltip() {
+                tooltip.classList.remove('visible');
+                currentTrigger = null;
+            }
+
+            document.addEventListener('mouseover', function(e) {
+                const trigger = e.target.closest('.event');
+                if (trigger) showTooltip(trigger);
+            });
+
+            document.addEventListener('mouseout', function(e) {
+                const trigger = e.target.closest('.event');
+                if (trigger && (!e.relatedTarget || !trigger.contains(e.relatedTarget))) {
+                    hideTooltip();
+                }
+            });
+
+            // Tap support for touch devices
+            document.addEventListener('click', function(e) {
+                const trigger = e.target.closest('.event');
+                if (trigger) {
+                    e.stopPropagation();
+                    if (currentTrigger === trigger) {
+                        hideTooltip();
+                    } else {
+                        showTooltip(trigger);
+                    }
+                } else if (!e.target.closest('.floating-tooltip')) {
+                    hideTooltip();
+                }
+            });
+
+            window.addEventListener('scroll', hideTooltip, true);
+            window.addEventListener('resize', hideTooltip);
         });
     </script>
 </body>
