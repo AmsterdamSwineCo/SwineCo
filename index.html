@@ -245,8 +245,28 @@ AWC Bests: Top Ten Films/Wines of 2023 #10-#7...</p>
            (212) 201-1224<br>
         info@amsterdamwine.com<br>
    271 Amsterdam Avenue, New York, NY 10023 </font>
-    <br><br>
-    <div style="margin-top: 10px; margin-bottom: 20px;">
+    <style>
+      .ticker-wrap {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 10px; 
+        margin-bottom: 20px;
+        white-space: nowrap;
+        box-sizing: border-box;
+      }
+      .ticker {
+        display: inline-block;
+        white-space: nowrap;
+        animation: ticker 200s linear infinite;
+      }
+      @keyframes ticker {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+    </style>
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <!-- FIRST SET -->
         <img src="assets/netscape-now-1996.gif" alt="Netscape Now">
         <img src="assets/best_viewed_with_eyes.gif" alt="Best Viewed With Eyes">
         <a href="https://amsterdamswine.com/calendar.html"><img src="assets/amazing_free_stuff.gif" alt="Amazing Free Stuff"></a>
@@ -316,8 +336,13 @@ AWC Bests: Top Ten Films/Wines of 2023 #10-#7...</p>
         <img src="assets/whyaol.gif" alt="yaol">
         <img src="assets/local_alien.gif" alt="alien">
         <a href="https://godotengine.org"><img src="assets/godot.png" alt="godot"></a>
-           
+      </div>
     </div>
+    <script>
+      // Automatically duplicate the badges so they loop seamlessly
+      const ticker = document.querySelector('.ticker');
+      ticker.innerHTML += ticker.innerHTML;
+    </script>
 </center>
 
 </body>
